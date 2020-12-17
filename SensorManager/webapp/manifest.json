@@ -65,7 +65,10 @@
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
                     "bundleName": "keepcool.SensorManager.i18n.i18n",
-                    "supportedLocales": ["de", "en"],
+                    "supportedLocales": [
+                        "de",
+                        "en"
+                    ],
                     "fallbackLocale": "en"
                 }
             },
@@ -98,12 +101,24 @@
                     "target": [
                         "TargetSensors"
                     ]
+                },
+                {
+                    "name": "RouteSensorStatus",
+                    "pattern": "sensor/{index}",
+                    "target": [
+                        "TargetSensorStatus"
+                    ]
                 }
             ],
             "targets": {
                 "TargetSensors": {
                     "viewId": "Sensors",
                     "viewName": "Sensors"
+                },
+                "TargetSensorStatus": {
+                    "viewId": "sensorStatus",
+                    "viewName": "SensorStatus",
+                    "viewLevel": 2
                 }
             }
         }
